@@ -1,0 +1,20 @@
+
+<script>
+    let idade = Number(prompt("Digite sua idade:"));
+    if (isNaN(idade)) {
+        alert(`Por favor, digite apenas números.`)
+    } else {
+        let login = prompt("Digite o login:");
+
+
+
+        if (login === "admin" || login === "user" && idade >= 18) {
+            alert("Usuario conectado com sucesso!");
+        }
+
+        else {
+            alert("Usuario incorretos");
+        }
+    }
+
+</script>

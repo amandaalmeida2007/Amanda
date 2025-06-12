@@ -1,0 +1,19 @@
+<script>
+    let nota = Number(prompt("Digite a nota do aluno"));
+
+    if (isNaN(nota) || nota > 10 || nota < 0) {
+        alert("Por favor insira um número válido!");
+    } else {
+
+        if (nota >= 7) {
+            alert("Aprovado.");
+        }
+        else if (nota >= 5 && nota <= 6.9) {
+            alert("Recuperação.");
+
+        } else {
+            alert("Reprovado.");
+        }
+    }
+
+</script>

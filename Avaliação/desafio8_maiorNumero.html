@@ -1,0 +1,23 @@
+<script>
+    const numeros = [];
+
+    for (let i = 0; i < 5; i++) {
+        let numero = Number(prompt(`Digite o número ${i + 1}:`));
+
+        while (isNaN(numero)) {
+            numero = Number(prompt(`Valor inválido! Digite o número ${i + 1} novamente:`));
+        }
+
+        numeros[i] = numero;
+    }
+
+    let maior = numeros[0];
+
+    for (let i = 1; i < numeros.length; i++) {
+        if (numeros[i] > maior) {
+            maior = numeros[i];
+        }
+    }
+
+    alert(`O maior número é: ${maior}`);
+</script>

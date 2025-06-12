@@ -1,0 +1,19 @@
+<script>
+    const transacoes = [];
+    for (let i = 0; i < 5; i++) {
+        let valor = Number(prompt("Digite o valor da transação ${i + 1}:"));
+
+        while (isNaN(valor)) {
+            valor = Number(prompt("Valor inválido! Digite um número para a transação ${i + 1}:"));
+        }
+
+        transacoes[i] = valor;
+    }
+
+    let soma = 0;
+    for (let i = 0; i < transacoes.length; i++) {
+        soma += transacoes[i];
+    }
+
+    alert(`O total das transações do dia é: R$ ${soma}`);
+</script>

@@ -1,0 +1,42 @@
+<script>
+    let opcao;
+    do {
+        opcao = prompt(
+            "Escolha uma operação:\n" +
+            "1 - Soma\n" +
+            "2 - Subtração\n" +
+            "3 - Multiplicação\n" +
+            "4 - Divisão"
+        );
+    } while (opcao !== "1" && opcao !== "2" && opcao !== "3" && opcao !== "4");
+
+    let num1 = Number(prompt("Digite o primeiro número:"));
+    let num2 = Number(prompt("Digite o segundo número:"));
+    let resultado;
+
+    switch (opcao) {
+        case "1":
+            resultado = num1 + num2;
+            alert("Resultado da soma: " + resultado);
+            break;
+
+        case "2":
+            resultado = num1 - num2;
+            alert("Resultado da subtração: " + resultado);
+            break;
+
+        case "3":
+            resultado = num1 * num2;
+            alert("Resultado da multiplicação: " + resultado);
+            break;
+
+        case "4":
+            if (num2 !== 0) {
+                resultado = num1 / num2;
+                alert("Resultado da divisão: " + resultado);
+            } else {
+                alert("Erro: divisão por zero não é permitida.");
+            }
+            break;
+    }
+</script>

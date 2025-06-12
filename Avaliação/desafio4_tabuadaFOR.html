@@ -1,0 +1,19 @@
+<script>
+    do {
+        let entrada = prompt("Digite um número para ver a tabuada:");
+        num = Number(entrada);
+
+        if (isNaN(num)) {
+            alert("Você não digitou um número válido. Tente novamente.");
+        }
+    } while (isNaN(num));
+    let mensagem = `Tabuada do ${num}:\n`;
+
+    for (let i = 1; i <= 10; i++) {
+        mensagem += `${num} x ${i} = ${num * i}\n`;
+    }
+
+    alert(mensagem);
+    
+
+</script>

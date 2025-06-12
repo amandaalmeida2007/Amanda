@@ -1,0 +1,30 @@
+<script>
+    let notas = [];
+
+    for (let i = 1; i <= 4; i++) {
+        let nota = Number(prompt(`Digite a nota ${i} (0 a 10):`));
+
+        while (isNaN(nota) || nota < 0 || nota > 10) {
+            nota = Number(prompt(`Valor inválido! Digite a nota ${i} (0 a 10):`));
+        }
+
+        notas.push(nota);
+    }
+
+    let soma = 0;
+    for (let i = 0; i < notas.length; i++) {
+        soma += notas[i];
+    }
+
+    const media = soma / notas.length;
+
+    alert(`Média: ${media}`);
+
+    if (media >= 7) {
+        alert("Turma aprovada.");
+    } else if (media >= 5) {
+        alert("Turma de recuperação.");
+    } else {
+        alert("Turma reprovada.");
+    }
+</script>
