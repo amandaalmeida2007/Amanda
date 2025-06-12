@@ -1,0 +1,14 @@
+<script>
+    let idade = Number(prompt("Digite a idade da pessoa:"));
+    let acompanhada = prompt("A pessoa está acompanhada dos pais? (sim/não)").toLowerCase();
+
+    if (isNaN(idade) || (acompanhada !== "sim" && acompanhada !== "não")) {
+        alert("Por favor, digite valores válidos!");
+    } else {
+        if (idade >= 16 || acompanhada === "sim") {
+            alert("A pessoa pode assistir ao filme.");
+        } else {
+            alert("A pessoa NÃO pode assistir ao filme.");
+        }
+    }
+</script>

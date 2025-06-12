@@ -1,0 +1,25 @@
+<script>
+    let num = Number(prompt("Digite um número:"));
+
+    if (isNaN(num)) {
+        alert("Por favor, digite um número válido!");
+    } else {
+        let mensagem = "";
+
+        if (num % 2 === 0) {
+            mensagem += "O número é par. ";
+        } else {
+            mensagem += "O número é ímpar. ";
+        }
+
+        if (num > 0) {
+            mensagem += "O número é positivo.";
+        } else if (num < 0) {
+            mensagem += "O número é negativo.";
+        } else {
+            mensagem += "O número é zero.";
+        }
+
+        alert(mensagem);
+    }
+</script>

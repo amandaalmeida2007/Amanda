@@ -1,0 +1,14 @@
+<script>
+    let nota = Number(prompt("Digite a nota do aluno:"));
+    let faltas = Number(prompt("Digite a quantidade de faltas do aluno:"));
+
+    if (isNaN(nota) || isNaN(faltas)) {
+        alert("Por favor, digite valores válidos para nota e faltas.");
+    } else {
+        if (nota >= 6 && faltas <= 5) {
+            alert("Aluno aprovado!");
+        } else {
+            alert("Aluno reprovado.");
+        }
+    }
+</script>

@@ -1,0 +1,14 @@
+<script>
+    let ativo = prompt("O usuário está ativo? (sim/não)").toLowerCase();
+    let verificado = prompt("O usuário está verificado? (sim/não)").toLowerCase();
+
+    if ((ativo !== "sim" && ativo !== "não") || (verificado !== "sim" && verificado !== "não")) {
+        alert("Por favor, responda 'sim' ou 'não' para as perguntas.");
+    } else {
+        if (ativo === "sim" && verificado === "sim") {
+            alert("Acesso liberado.");
+        } else {
+            alert("Acesso negado.");
+        }
+    }
+</script>

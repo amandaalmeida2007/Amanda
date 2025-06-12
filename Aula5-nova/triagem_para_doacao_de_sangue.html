@@ -1,0 +1,14 @@
+<script>
+    let idade = Number(prompt("Digite a idade da pessoa:"));
+    let peso = Number(prompt("Digite o peso da pessoa (kg):"));
+
+    if (isNaN(idade) || isNaN(peso)) {
+        alert("Por favor, digite valores numéricos válidos!");
+    } else {
+        if (idade >= 16 && idade <= 69 && peso > 50) {
+            alert("A pessoa pode doar sangue.");
+        } else {
+            alert("A pessoa NÃO pode doar sangue.");
+        }
+    }
+</script>

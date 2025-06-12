@@ -1,0 +1,14 @@
+<script>
+    let idade = Number(prompt("Digite a idade do cliente:"));
+    let tempoCliente = Number(prompt("Digite há quantos anos ele é cliente:"));
+
+    if (isNaN(idade) || isNaN(tempoCliente)) {
+        alert("Por favor, digite valores numéricos válidos!");
+    } else {
+        if (idade > 60 || tempoCliente > 5) {
+            alert("O cliente tem direito a desconto.");
+        } else {
+            alert("O cliente NÃO tem direito a desconto.");
+        }
+    }
+</script>

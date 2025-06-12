@@ -1,0 +1,13 @@
+<script>
+    let numero = Number(prompt("Digite um número:"));
+
+    if (isNaN(numero)) {
+        alert("Por favor, digite um número válido!");
+    } else {
+        if (numero % 3 === 0 || numero % 5 === 0) {
+            alert("O número é múltiplo de 3 ou de 5.");
+        } else {
+            alert("O número NÃO é múltiplo de 3 nem de 5.");
+        }
+    }
+</script>
