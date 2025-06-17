@@ -1,0 +1,22 @@
+<script>
+    // Criação da matriz identidade 4x4
+    let matriz = [];
+  
+    for (let i = 0; i < 4; i++) {
+        matriz[i] = []; // cria a linha
+        for (let j = 0; j < 4; j++) {
+            // Se estiver na diagonal principal, coloca 1, senão 0
+            if (i === j) {
+                matriz[i][j] = 1;
+            } else {
+                matriz[i][j] = 0;
+            }
+        }
+    }
+  
+    // Exibindo a matriz no console
+    for (let i = 0; i < 4; i++) {
+        console.log(matriz[i]);
+    }
+  </script>
+  

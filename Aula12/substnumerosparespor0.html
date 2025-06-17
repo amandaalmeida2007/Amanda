@@ -1,0 +1,23 @@
+<script>
+    // Exemplo de matriz
+    let matriz = [
+        [12, 7, 5],
+        [8, 3, 10],
+        [15, 6, 9]
+    ];
+    
+    // Percorrendo a matriz para substituir números pares por 0
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            if (matriz[i][j] % 2 === 0) {  // verifica se é par
+                matriz[i][j] = 0;           // substitui por 0
+            }
+        }
+    }
+    
+    // Exibindo a matriz modificada
+    for (let i = 0; i < matriz.length; i++) {
+        console.log(matriz[i]);
+    }
+    
+    </script>

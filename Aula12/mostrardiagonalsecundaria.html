@@ -1,0 +1,18 @@
+<script>
+    // Matriz exemplo 3x3
+    let matriz = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ];
+  
+    let diagonalSecundaria = [];
+  
+    // Percorre a matriz para coletar os elementos da diagonal secundária
+    for (let i = 0; i < matriz.length; i++) {
+        diagonalSecundaria.push(matriz[i][matriz.length - 1 - i]);
+    }
+  
+    // Exibe a diagonal secundária
+    console.log("Diagonal secundária:", diagonalSecundaria);
+  </script>

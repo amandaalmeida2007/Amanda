@@ -1,0 +1,31 @@
+<script>
+    // Matriz original 3x3
+    let matrizOriginal = [
+        [2, 4, 6],
+        [1, 3, 5],
+        [7, 8, 9]
+    ];
+  
+    // Nova matriz com valores multiplicados por 2
+    let matrizMultiplicada = [];
+  
+    for (let i = 0; i < matrizOriginal.length; i++) {
+        matrizMultiplicada[i] = []; // inicializa a linha
+        for (let j = 0; j < matrizOriginal[i].length; j++) {
+            matrizMultiplicada[i][j] = matrizOriginal[i][j] * 2;
+        }
+    }
+  
+    // Exibindo a matriz original
+    console.log("Matriz original:");
+    for (let i = 0; i < matrizOriginal.length; i++) {
+        console.log(matrizOriginal[i]);
+    }
+  
+    // Exibindo a matriz multiplicada
+    console.log("Matriz multiplicada por 2:");
+    for (let i = 0; i < matrizMultiplicada.length; i++) {
+        console.log(matrizMultiplicada[i]);
+    }
+  </script>
+  

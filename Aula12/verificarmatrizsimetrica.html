@@ -1,0 +1,30 @@
+<script>
+    // Exemplo de matriz 3x3 (simétrica)
+    let matriz = [
+        [1, 2, 3],
+        [2, 4, 5],
+        [3, 5, 6]
+    ];
+  
+    let simetrica = true;
+  
+    // Verifica se matriz[i][j] === matriz[j][i]
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            if (matriz[i][j] !== matriz[j][i]) {
+                simetrica = false;
+                break;
+            }
+        }
+        if (!simetrica) {
+            break;
+        }
+    }
+  
+    // Exibe o resultado
+    if (simetrica) {
+        console.log("A matriz é simétrica.");
+    } else {
+        console.log("A matriz NÃO é simétrica.");
+    }
+  </script>

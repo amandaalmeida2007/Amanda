@@ -1,0 +1,23 @@
+<script>
+    // Exemplo de matriz
+    let matriz = [
+        [12, 67, 5],
+        [88, 3, 10],
+        [15, 6, 92]
+    ];
+  
+    // Contador para números maiores que 50
+    let contador = 0;
+  
+    // Percorrendo a matriz
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            if (matriz[i][j] > 50) {
+                contador++;
+            }
+        }
+    }
+  
+    // Exibindo o resultado
+    console.log("Quantidade de números maiores que 50:", contador);
+  </script>
